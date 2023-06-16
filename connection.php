@@ -1,5 +1,7 @@
 <?php
 
+// better method is by using define
+
 $servername = "localhost";
 $username = "root";
 $password = "";
