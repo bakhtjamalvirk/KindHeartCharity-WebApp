@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <style>
+        .option4 {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+        
+        .option4.selected {
+            background-color: red;
+            color: white;
+        }
+        .option {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+        
+        .option.selected {
+            background-color: #ff0000;
+            color: #fff;
+        }
+        
+        #selectedOption {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function selectOption1(option) {
+            var option1 = document.getElementById('option1');
+            var option2 = document.getElementById('option2');
+
+            option1.classList.remove('selected');
+            option2.classList.remove('selected');
+            option.classList.add('selected');
+        }
+
+        function validateForm() {
+            var option1Selected = document.getElementById('option1').classList.contains('selected');
+            var option2Selected = document.getElementById('option2').classList.contains('selected');
+
+            if (!option1Selected && !option2Selected) {
+                alert("Please select an option.");
+                return false;
+            }
+            var options = document.getElementsByClassName('option');
+            var selectedOption = false;
+
+            for (var i = 0; i < options.length; i++) {
+                if (options[i].classList.contains('selected')) {
+                    selectedOption = true;
+                    break;
+                }
+            }
+
+            if (!selectedOption) {
+                alert("Please select an option.");
+                return false;
+            }
+
+            // Validation successful
+            alert("Form submitted successfully!");
+            return true;
+        }
+        function selectOption(option) {
+            var options = document.getElementsByClassName('option');
+
+            for (var i = 0; i < options.length; i++) {
+                options[i].classList.remove('selected');
+            }
+
+            option.classList.add('selected');
+            
+            var selectedOptionText = option.textContent;
+            var selectedOptionDisplay = document.getElementById('selectedOption');
+            selectedOptionDisplay.textContent = "Selected Option: " + selectedOptionText;
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()">
+        <button type="button" id="option1" class="option4" onclick="selectOption1(this)">Option 1</button>
+        <button type="button" id="option2" class="option4" onclick="selectOption1(this)">Option 2</button>
+        <br><br>
+        <div class="option" onclick="selectOption(this)">Option 1</div>
+        <div class="option" onclick="selectOption(this)">Option 2</div>
+        <div class="option" onclick="selectOption(this)">Option 3</div>
+        <div class="option" onclick="selectOption(this)">Option 4</div>
+        <div class="option" onclick="selectOption(this)">Option 5</div>
+        <div class="option" onclick="selectOption(this)">Option 6</div>
+        <br><br>
+        <div id="selectedOption"></div>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
