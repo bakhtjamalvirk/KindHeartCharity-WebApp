@@ -1,0 +1,555 @@
+#section_1{
+    background-color: #c7c7c9;
+    padding: 0;
+    margin:0;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header CSS */
+
+.site-header{
+    background-color: #c7c7c9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header .row{
+    display: flex;
+    width: 100%;
+}
+
+header .div-loc{
+    margin-left: 160px;
+    width: 43%;
+    display: flex;
+}
+
+header .img-loc{
+    width: 10px;
+    height: 13px;
+}
+
+header .img-mail{
+    width: 15px;
+    height: 15px;
+    margin-left: 50px;
+}
+
+header .p-0{
+    color: #7b0781;
+}
+
+header .social-icon{
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+
+header .social-icon-item{
+    width: 30px;
+}
+
+header .fa{
+    list-style-type: none;
+    color: #7b0781;
+}
+
+.fa:hover{
+    cursor: pointer;
+    background-color: #7b0781;
+    color: white;
+    border-radius: 5px;
+}
+
+header .div-icons{
+    margin-right: 0px;
+    float: right;
+    justify-content: right;
+    width: 43%;
+}
+
+header .login{
+    width: 14%;
+}
+
+.login a{
+    margin-left: 50px;
+    font-size: large;
+    color: white;
+    line-height: 50px;
+    padding: 10px;
+    background-color: #7b0781;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.login a:hover{
+    background-color: white;
+    color: #7b0781;
+}
+
+/* Navbar Css */
+
+.navbar{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+nav .con{
+    width: 900px;
+}
+
+nav .img-logo{
+    width: 90px;
+    height: 90px;
+}
+
+nav .tb-nav{
+    color: #7b0781;
+    margin-left: 130px;
+}
+
+nav .th-nav{
+    font-size: 30px;
+}
+
+nav .th-small{
+    text-align: left;
+}
+
+nav .ul-nav{
+    list-style-type: none;
+    display: flex;
+}
+
+nav .div-nav{
+    width: 1200px;
+}
+
+.div-nav a{
+    color: #6d6d6f;
+    font-size: large;
+    text-align: center;
+    padding: 10px 26px;
+}
+
+li.nav-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+li.nav-item:link{
+    color: #7b0781;
+}
+
+.dropdown .dropbtn {
+    font-size: large;  
+    height: 62px;
+    border: none;
+    outline: none;
+    padding: 14px 10px;
+    background-color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.dropdown .dropbtn a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn i{
+    color: #7b0781;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #6d6d6f;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 15px;
+}
+
+.donate{
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+a.donate:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #7b0781;
+}
+
+/* donation css */
+
+#donate-section{
+    height: 1100px;
+    width: 100%;
+    border: 1px solid rgb(87, 89, 104);
+    margin-top: 148px;
+    background-color: #7b0781;
+}
+
+.donate-div{
+    height: 885px;
+    width: 700px;
+    margin-top: 80px;
+    margin-left: 470px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.donate-div h1{
+    color: #7b0781;
+    font-size: 45px;
+    margin: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.donate-div h2{
+    color: #7b0781;
+    font-size: 27px;
+    margin-left: 40px;
+}
+
+#option1{
+    margin-left: 40px;
+}
+
+.option4 {
+    display: inline-block;
+    padding: 16px;
+    font-size: large;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 310px;
+    border: none;
+    color: #6d6d6f;
+    transition: all 0.3s ease;
+}
+
+.option4:hover{
+    background-color: #7b0781;
+    color: white;
+}
+
+.option4.selected {
+    background-color: #7b0781;
+    color: white;
+}
+
+.option {
+    display: inline-block;
+    padding: 16px;
+    width: 105px;
+    margin-left: 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    color: #6d6d6f;
+    transition: all 0.3s ease;
+}
+
+#amount{
+    margin-left: 40px;
+}
+
+.option:hover{
+    background-color: #7b0781;
+    color: white;
+}
+
+.custom{
+    padding: 16px;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 270px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    color: #6d6d6f;
+    transition: all 0.3s ease;
+}
+
+.option.selected {
+    background-color: #7b0781;
+    color: white;
+}
+
+.info{
+    padding: 16px;
+    font-size: large;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 270px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    color: #6d6d6f;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+#info{
+    margin-left: 40px;
+}
+
+.option5{
+    padding: 16px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 40px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 310px;
+    border: none;
+    text-align: left;
+    color: #6d6d6f;
+    transition: all 0.3s ease;
+}
+
+#option22{
+    margin-top: 20px;
+}
+
+.option5:hover{
+    background-color: #7b0781;
+    color: white;
+}
+
+.option5.selected {
+    background-color: #7b0781;
+    color: white;
+}
+
+.submit{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(87, 89, 104);
+    width: 628px;
+    margin-left: 40px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 30px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    background-color: #7b0781;
+    cursor: pointer;
+}
+
+.donate-div i{
+    color: #7b0781;
+    width: 30px;
+}
+
+.donate-div i:hover{
+    border: none;
+}
+
+/* extra css */
+
+.extra{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(87, 89, 104);
+}
+
+.extra-contact{
+    height: 400px;
+    background-color: rgb(87, 89, 104);
+    display: flex;
+    border: 1px solid rgb(87, 89, 104);
+}
+
+.extra-1{
+    height: 400px;
+    width: 28%;
+}
+
+.extra-1 img{
+    width: 100px;
+    height: 100px;
+    margin: 70px;
+}
+
+.extra-2{
+    height: 400px;
+    width: 17%;
+}
+
+.extra-2 h1{
+    color: #7b0781;
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.extra-2 p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.extra-2 a{
+    color: white;
+    font-size: large;
+}
+
+.extra-2 a:hover{
+    color: #7b0781;
+}
+
+.extra-3{
+    height: 400px;
+    width: 16%;
+}
+
+.extra-3 p{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.extra-3 .ex-p{
+    margin-top: 140px;
+}
+
+.extra-3 a{
+    color: white;
+    font-size: large;
+}
+
+.extra-3 a:hover{
+    color: #7b0781;
+}
+
+.extra-4{
+    height: 400px;
+    width: 39%;
+}
+
+.contact-info h2{
+    color: #7b0781;
+    margin-top: 40px;
+    font-size: 27px;
+}
+
+.contact-info{
+    color: #6d6d6f;
+    font-size: large;
+}
+
+.contact-location img{
+    width: 12px;
+    height: 15px;
+}
+
+.contact-info .contact-location a{
+    text-decoration: none;
+    color: #6d6d6f;
+    font-size: large;
+}
+
+.contact-info .contact-location a:hover{
+    color: #7b0781;
+}
+
+.contact-info button{
+    background-color: #7b0781;
+    color: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-info button a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.extra-4 h2{
+    margin-top: 90px;
+    font-size: 27px;
+}
+
+.extra-4 p{
+    color: white;
+}
+
+.extra-4 p .ex-a{
+    color: white;
+    font-size: large;
+}
+
+.footer{
+    height: 100px;
+    background-color: #7b0781;
+    border: 1px solid #7b0781;
+}
+
+.footer .f-p{
+    margin-top: 30px;
+}
+
+.footer p{
+    color: white;
+    margin: 0;
+    margin-left: 80px;
+}
+
+
+
+
